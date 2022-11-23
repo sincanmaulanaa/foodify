@@ -6,6 +6,7 @@ const hamburgerElement = document.querySelector("#hamburger");
 const headerElement = document.querySelector("header");
 const heroElement = document.querySelector(".hero");
 const mainElement = document.querySelector("main");
+const cardElement = document.querySelector(".card");
 
 const restaurantLists = data.restaurants;
 
@@ -30,10 +31,13 @@ mainElement.addEventListener("click", (e) => {
 });
 
 restaurantLists.forEach((item) => {
-  mainElement.innerHTML += `
-	<div>
-		<span>${item.name}</span>
-		<span>${item.city}</span>
-	</div>
+  cardElement.innerHTML += `
+	<article class="card-item">
+		<img class="card-item_thumbnail" src="${item.pictureId}" alt="">
+		<span class="card-item_city">${item.city}</span>
+		<span class="card-item_rating">⭐ ${item.rating}</span>
+		<h3 class="card-item_title">${item.name}</h3>
+		<p class="card-item_description">${item.description}</p>
+	</article>
   `;
 });

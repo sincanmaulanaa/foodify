@@ -5,27 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width" initial-scale="1.0">
+  <meta name="description"
+    content="Foodify is an information website about the most popular and most visited restaurants, you can see the address along with the restaurant's visitor rating.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-  <title>Foodify</title>
+  <title>Foodify | Explore Your Favorite Restaurants</title>
 </head>
 
 <body>
   <a href="#maincontent" class="skip-link">Menuju ke konten</a>
   <header>
-    <a id="hamburger" href="#">☰</a>
+    <button id="hamburger" aria-label="Open and close navigation ">☰</button>
     <h1 class="header_title">Foodify</h1>
+
+    <nav id="drawer">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="index.html">Home</a></li>
+        <li class="nav_item"><a href="#">Favorite</a></li>
+        <li class="nav_item"><a href="https://blog.sincandev.me" target="_blank" rel="noreferrer">About Us</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav id="drawer">
-    <ul class="nav_list">
-      <li class="nav_item"><a href="http://localhost:9000/">Home</a></li>
-      <li class="nav_item"><a href="#">Favorite</a></li>
-      <li class="nav_item"><a href="https://blog.sincandev.me" target="_blank">About Us</a></li>
-    </ul>
-  </nav>
   <div class="hero">
     <img src="./images/heros/hero-image_2.jpg" alt="">
   </div>

@@ -33,7 +33,7 @@ mainElement.addEventListener("click", (e) => {
 restaurantLists.forEach((item) => {
   cardElement.innerHTML += `
 	<article class="card-item">
-		<img class="card-item_thumbnail" src="${item.pictureId}" alt="">
+		<img class="card-item_thumbnail" src="${item.pictureId}" alt="${item.alternativeText}">
 		<span class="card-item_city">${item.city}</span>
 		<span class="card-item_rating">⭐ ${item.rating}</span>
 		<h3 class="card-item_title">${item.name}</h3>
